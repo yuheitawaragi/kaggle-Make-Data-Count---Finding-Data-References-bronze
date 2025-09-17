@@ -10,6 +10,9 @@ Identify all data citations in scientific papers and classify them as:
 - Primary: Data generated specifically for the study
 - Secondary: Data reused or derived from existing sources
 
+## Evaluation
+The competition uses the F1-score, which balances precision (true positives among predicted positives) and recall (true positives among actual positives). A good model maximizes both, so moderate performance on both is favored over excellent performance on one and poor performance on the other.
+
 
 ## Data
 The full dataset is not included in this repository due to its large size.
