@@ -13,6 +13,18 @@ Identify all data citations in scientific papers and classify them as:
 ## Evaluation
 The competition uses the F1-score, which balances precision (true positives among predicted positives) and recall (true positives among actual positives). A good model maximizes both, so moderate performance on both is favored over excellent performance on one and poor performance on the other.
 
+## Submission
+- Identify all data references in the test set and submit as unique tuples (article_id, dataset_id, type).
+- Each (dataset_id, type) per article should appear only once.
+- Include only articles that contain data references; articles with no references should be excluded.
+- Convert all DOIs to the full format https://doi.org/[prefix]/[suffix].
+- The submission file must have a header and follow the specified format.
+row_id,article_id,dataset_id,type
+0,10.1002_cssc.202201821,https://doi.org/10.5281/zenodo.7074790,Primary
+1,10.1002_esp.5090,CHEMBL1097,Secondary
+...
+
+
 
 ## Data
 The full dataset is not included in this repository due to its large size.
