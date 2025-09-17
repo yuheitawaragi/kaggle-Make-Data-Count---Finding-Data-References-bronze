@@ -25,6 +25,12 @@ row_id,article_id,dataset_id,type
 1,10.1002_esp.5090,CHEMBL1097,Secondary
 ...
 ```
+## Make Data Count (MDC)
+- A global, community-led initiative developing metrics for assessing the use of open data.
+- For over 10 years, it has promoted technical infrastructure, standardization of data usage, research on researcher behavior, and the development of a community for responsible evaluation of data reuse.
+- Supported by philanthropic organizations, partner institutions, and community contributions.
+- Competition sponsor: DataCite International Data Citation Initiative e.V.
+- Prize funding: The Navigation Fund and the Chan Zuckerberg Initiative.
 
 
 
