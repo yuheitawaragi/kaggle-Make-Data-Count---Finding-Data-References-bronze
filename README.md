@@ -42,3 +42,6 @@ Train and test dataset: [link](https://www.kaggle.com/competitions/make-data-cou
 ## Model
 The model dataset is not included in this repository due to its large size.
 Model dataset: [link](https://www.kaggle.com/models/qwen-lm/qwen2.5/Transformers/32b-instruct-awq/1)
+
+## Citation
+Make Data Count, Maggie Demkin, and Walter Reade. Make Data Count - Finding Data References. https://kaggle.com/competitions/make-data-count-finding-data-references, 2025. Kaggle.
