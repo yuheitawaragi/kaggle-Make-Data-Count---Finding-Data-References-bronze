@@ -17,4 +17,4 @@ Train and test dataset: [link](https://www.kaggle.com/competitions/make-data-cou
 
 ## Model
 The model dataset is not included in this repository due to its large size.
-Qwen2.5 dataset: [link](https://www.kaggle.com/models/qwen-lm/qwen2.5/Transformers/32b-instruct-awq/1)
+Model dataset: [link](https://www.kaggle.com/models/qwen-lm/qwen2.5/Transformers/32b-instruct-awq/1)
