@@ -11,3 +11,11 @@ The objective of this project is to develop a robust pipeline that:
 * Detects references to datasets, including DOIs, repository names, and accession numbers.
 * Categorizes each dataset mention as Primary or Secondary.
 * Generates output in the required submission format (article_id, dataset_id, type).
+
+## Approach
+This project leverages text parsing, regular expressions, and language model-based classification to identify and categorize references to datasets in scientific papers.
+
+### 1. Environment Setup
+* Resolves conflicts between packages (e.g., TensorFlow) and enforces specific versions for parsing, LLM inference, and regex operations.
+* Includes safeguards for handling CUDA, logging, and I/O peculiarities on Kaggle.
+
