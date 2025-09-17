@@ -19,6 +19,11 @@ The competition uses the F1-score, which balances precision (true positives amon
 - Include only articles that contain data references; articles with no references should be excluded.
 - Convert all DOIs to the full format https://doi.org/[prefix]/[suffix].
 - The submission file must have a header and follow the specified format.
+```csv
+row_id,article_id,dataset_id,type
+0,10.1002_cssc.202201821,https://doi.org/10.5281/zenodo.7074790,Primary
+1,10.1002_esp.5090,CHEMBL1097,Secondary
+...
 
 
 
