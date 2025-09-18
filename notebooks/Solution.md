@@ -40,5 +40,9 @@ post_filter.py is a post-processing filter that removes false positive DOIs from
 ### 8. Final LLM-based validation to distinguish dataset citations from literature citations ('post_validate.py')
 Performs a final validation step using an LLM (`Qwen2.5-32B` AWQ quantized). It examines the abstract and citation context for each DOI to decide whether the citation points to a dataset (A) or to literature/non-data (B). This step refines the rule-based filtering by handling ambiguous cases that require deeper contextual understanding.
 
+### 9. Automatically classify cited datasets as Primary (authors’ own) or Secondary (external) using an LLM　('predict.py')
+predict.py automatically classifies cited datasets in scientific papers as Primary (authored by the paper’s authors) or Secondary (obtained from external sources) using an LLM (`Qwen2.5-32B` AWQ quantized). It extracts citation context and abstracts, generates prompts, runs LLM inference, and saves the results.
+
+
 
 
