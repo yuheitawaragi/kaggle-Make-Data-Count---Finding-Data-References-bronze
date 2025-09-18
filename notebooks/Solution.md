@@ -31,3 +31,6 @@ check_parse.py is a validation script that checks the parsing results. It verifi
 ### 5. Dataset ID extraction tool from research text ('getid.py')
 getid.py is a script for extracting dataset identifiers (DOIs, accession numbers, etc.) from research articles. It splits body text and references, applies regex-based matching to detect and normalize dataset IDs, removes noise, and saves the extracted results to Parquet and CSV files. It also captures context windows around each match to help verify the usage of identified datasets.
 
+### 6. LLM-based dataset ID classification tool ('llm_validate.py')
+llm_validate.py uses a large language model (`Qwen2.5-32B` AWQ quantized) to classify extracted DOIs and accession numbers. It categorizes them as A (Data) if they correspond to dataset repositories, or B (Literature) if they belong to publications. The validated results are merged and exported to the final submission file (submission.csv).
+
