@@ -19,3 +19,9 @@ This project leverages text parsing, regular expressions, and language model-bas
 * Resolves conflicts between packages (e.g., TensorFlow) and enforces specific versions for parsing, LLM inference, and regex operations.
 * Includes safeguards for handling CUDA, logging, and I/O peculiarities on Kaggle.
 
+### 2. Helper & Logging ('helpers.py')
+This helpers.py file is a utility module designed to streamline data processing and evaluation in a Kaggle competition environment. Its main functionalities include:
+* Environment Detection and Directory Setup
+
+
+
