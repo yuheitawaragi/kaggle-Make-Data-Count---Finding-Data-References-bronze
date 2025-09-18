@@ -28,5 +28,6 @@ parse.py is a document parser for Kaggle competitions. It automatically detects 
 ### 4. Parsing validation tool ('check_parse.py')
 check_parse.py is a validation script that checks the parsing results. It verifies whether the dataset_id values from the training labels (train_labels.csv) are correctly present in the parsed text data (train_parse). Missing IDs are reported in the logs, helping ensure that the parser works as expected.
 
-
+### 5. Dataset ID extraction tool from research text ('getid.py')
+getid.py is a script for extracting dataset identifiers (DOIs, accession numbers, etc.) from research articles. It splits body text and references, applies regex-based matching to detect and normalize dataset IDs, removes noise, and saves the extracted results to Parquet and CSV files. It also captures context windows around each match to help verify the usage of identified datasets.
 
