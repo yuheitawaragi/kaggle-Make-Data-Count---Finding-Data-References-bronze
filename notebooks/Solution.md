@@ -34,3 +34,11 @@ getid.py is a script for extracting dataset identifiers (DOIs, accession numbers
 ### 6. LLM-based dataset ID classification tool ('llm_validate.py')
 llm_validate.py uses a large language model (`Qwen2.5-32B` AWQ quantized) to classify extracted DOIs and accession numbers. It categorizes them as A (Data) if they correspond to dataset repositories, or B (Literature) if they belong to publications. The validated results are merged and exported to the final submission file (submission.csv).
 
+### 7. cleaning to avoid misclassifying publication DOIs as datasets ('post_filter.py')
+post_filter.py is a post-processing filter that removes false positive DOIs from the output of llm_validate.py. It drops DOIs starting with publisher prefixes when their surrounding text lacks dataset-related keywords, while keeping accession numbers untouched. The cleaned results are saved to the final submission.csv.
+
+### 8. Final LLM-based validation to distinguish dataset citations from literature citations ('post_validate.py')
+Performs a final validation step using an LLM (`Qwen2.5-32B` AWQ quantized). It examines the abstract and citation context for each DOI to decide whether the citation points to a dataset (A) or to literature/non-data (B). This step refines the rule-based filtering by handling ambiguous cases that require deeper contextual understanding.
+
+
+
