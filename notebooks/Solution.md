@@ -21,7 +21,8 @@ This project leverages text parsing, regular expressions, and language model-bas
 
 ### 2. Helper & Logging ('helpers.py')
 This helpers.py file is a utility module designed to streamline data processing and evaluation in a Kaggle competition environment. Its main functionalities include:
-* Environment Detection and Directory Setup
+* Environment Detection and Directory Setup<br>
+  Detects if the code is running in a Kaggle environment and automatically sets input and working directories.
 
 
 
