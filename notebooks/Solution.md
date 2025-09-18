@@ -22,5 +22,8 @@ This project leverages text parsing, regular expressions, and language model-bas
 ### 2. Helper & Logging ('helpers.py')
 helpers.py is a utility module designed to streamline data processing and evaluation in Kaggle competitions. It provides functions for automatic Kaggle environment detection and directory setup, text data loading and normalization, dataset type classification (Primary/Secondary), and F1 score calculation for submitted data.
 
+### 3. PDF and XML Parsing ('parse.py')
+parse.py is a document parser for Kaggle competitions. It automatically detects and converts PDF and XML files into plain text, saving standardized text to /tmp/train_parse/<article_id>.txt. The script detects XML formats, extracts main text and references, normalizes DOI notation, and appends XML content to the PDF text when both are present.
+
 
 
